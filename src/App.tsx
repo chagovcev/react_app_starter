@@ -1,9 +1,8 @@
-import Home from "./pages";
+import Home from './pages';
+import { type FC } from 'react';
 
-const App = () => {
-  return (
-   <Home/>
-  );
-}
+const App: FC = () => {
+  return <Home />;
+};
 
 export default App;

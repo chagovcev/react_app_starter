@@ -1,6 +1,7 @@
 # react_app_starter
 
 This project has the following features:
+
 1. Project initialized by using CRA
 2. Changing themes
 3. Changes languages

@@ -1,22 +1,22 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 
 interface IInitialState {
-    theme: 'dark' | 'light'
+  theme: 'dark' | 'light';
 }
 
 const initialState: IInitialState = {
-    theme: 'light'
-}
+  theme: 'light',
+};
 export const themesSlice = createSlice({
-    name: 'themes',
-    initialState,
-    reducers: {
-        toggleTheme: (state) => {
-            state.theme = state.theme === 'light' ? 'dark' : 'light';
-        }
-    }
+  name: 'themes',
+  initialState,
+  reducers: {
+    toggleTheme: (state) => {
+      state.theme = state.theme === 'light' ? 'dark' : 'light';
+    },
+  },
 });
 
 export const { toggleTheme } = themesSlice.actions;
 
-export  default themesSlice.reducer;
+export default themesSlice.reducer;
