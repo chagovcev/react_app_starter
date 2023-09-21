@@ -1,0 +1,32 @@
+.home-page {
+  padding: 20px;
+
+  &__title {
+    color: dodgerblue;
+  }
+
+  &__paragraph {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid dodgerblue;
+    border-radius: 4px;
+  }
+
+  &__button {
+    margin-left: 20px;
+    padding: 5px;
+    transition: all 0.2s ease;
+    border: 1px solid dodgerblue;
+    border-radius: 4px;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: azure;
+      color: black;
+    }
+  }
+}
+
+
