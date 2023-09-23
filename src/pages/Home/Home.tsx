@@ -3,8 +3,9 @@ import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import { currentThemeSelector, toggleTheme } from '../../features/themes';
 import { type FC } from 'react';
 
+import { Button } from '../../components';
+
 import styles from './Home.module.scss';
-import Button from '../../components/Button';
 
 const Home: FC = () => {
   const currentTheme = useAppSelector(currentThemeSelector);
