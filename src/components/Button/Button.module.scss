@@ -1,0 +1,49 @@
+.button {
+  margin-left: 20px;
+  padding: 5px;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.primary {
+  border: 1px solid dodgerblue;
+  background-color: dodgerblue;
+  color: white;
+
+  &:hover {
+    background-color: white;
+    color: dodgerblue;
+  }
+
+  &__outline {
+    background-color: white;
+    color: dodgerblue;
+
+    &:hover {
+      background-color: dodgerblue;
+      color: white;
+    }
+  }
+}
+
+.secondary {
+  border: 1px solid darkcyan;
+  background-color: darkcyan;
+  color: white;
+
+  &:hover {
+    background-color: white;
+    color: darkcyan;
+  }
+
+  &__outline {
+    background-color: white;
+    color: darkcyan;
+
+    &:hover {
+      background-color: darkcyan;
+      color: white;
+    }
+  }
+}

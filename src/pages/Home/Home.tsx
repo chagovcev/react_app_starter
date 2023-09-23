@@ -4,6 +4,7 @@ import { currentThemeSelector, toggleTheme } from '../../features/themes';
 import { type FC } from 'react';
 
 import styles from './Home.module.scss';
+import Button from '../../components/Button';
 
 const Home: FC = () => {
   const currentTheme = useAppSelector(currentThemeSelector);
@@ -21,13 +22,7 @@ const Home: FC = () => {
         Now is <b>{currentTheme}</b> theme.
       </p>
 
-      <button
-        type="button"
-        onClick={handleChangeTheme}
-        className={styles.home_page__button}
-      >
-        Change theme
-      </button>
+      <Button type="button" onClick={handleChangeTheme} label="Change theme" />
     </div>
   );
 };
