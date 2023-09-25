@@ -1,12 +1,23 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+const themes = ['dark', 'light'] as const;
+
+type themeType = (typeof themes)[number];
+
+const isThemeType = (theme: string): theme is themeType =>
+  themes.includes(theme as themeType);
+
 interface IInitialState {
-  theme: 'dark' | 'light';
+  theme: themeType;
 }
 
+const themeInStorage = localStorage.getItem('theme');
+
 const initialState: IInitialState = {
-  theme: 'light',
+  theme:
+    !!themeInStorage && isThemeType(themeInStorage) ? themeInStorage : 'light',
 };
+
 export const themesSlice = createSlice({
   name: 'themes',
   initialState,

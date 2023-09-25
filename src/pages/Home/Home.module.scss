@@ -1,5 +1,7 @@
 .home_page {
+  height: 100vh;
   padding: 20px;
+  background-color: var(--background-color);
 
   &__title {
     color: dodgerblue;
@@ -10,6 +12,7 @@
     padding: 10px;
     border: 1px solid dodgerblue;
     border-radius: 4px;
+    color: var(--text-color);
   }
 }
 
