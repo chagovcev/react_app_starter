@@ -17,7 +17,7 @@ const Home: FC = () => {
 
   return (
     <div className={styles.home_page}>
-      <h1 className={styles.home_page__title}>This is a Home page</h1>
+      <h1 className={styles.home_page__title}> This is a Home page</h1>
 
       <p className={styles.home_page__paragraph}>
         Now is <b>{currentTheme}</b> theme.

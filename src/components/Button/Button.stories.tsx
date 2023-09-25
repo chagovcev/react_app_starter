@@ -5,9 +5,6 @@ import Button from './Button';
 const meta = {
   title: 'components/Button',
   component: Button,
-  parameters: {
-    layout: 'centered',
-  },
   argTypes: {
     variant: {
       options: ['primary', 'secondary'],

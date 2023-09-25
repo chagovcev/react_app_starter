@@ -7,43 +7,43 @@
 }
 
 .primary {
-  border: 1px solid dodgerblue;
-  background-color: dodgerblue;
-  color: white;
+  border: 1px solid var(--primary-btn-bg);
+  background-color: var(--primary-btn-bg);
+  color: var(--primary-btn-color);
 
   &:hover {
-    background-color: white;
-    color: dodgerblue;
+    background-color: var(--primary-btn-color);
+    color: var(--primary-btn-bg);
   }
 
   &__outline {
-    background-color: white;
-    color: dodgerblue;
+    background-color: var(--primary-btn-color);
+    color: var(--primary-btn-bg);
 
     &:hover {
-      background-color: dodgerblue;
-      color: white;
+      background-color: var(--primary-btn-bg);
+      color: var(--primary-btn-color);
     }
   }
 }
 
 .secondary {
-  border: 1px solid darkcyan;
-  background-color: darkcyan;
-  color: white;
+  border: 1px solid var(--secondary-btn-bg);
+  background-color: var(--secondary-btn-bg);
+  color: var(--secondary-btn-color);
 
   &:hover {
-    background-color: white;
-    color: darkcyan;
+    background-color: var(--secondary-btn-color);
+    color: var(--secondary-btn-bg);
   }
 
   &__outline {
-    background-color: white;
-    color: darkcyan;
+    background-color: var(--secondary-btn-color);
+    color: var(--secondary-btn-bg);
 
     &:hover {
-      background-color: darkcyan;
-      color: white;
+      background-color: var(--secondary-btn-bg);
+      color: var(--secondary-btn-color);
     }
   }
 }
