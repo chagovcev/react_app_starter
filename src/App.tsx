@@ -1,5 +1,6 @@
-import Home from './pages';
 import { type FC } from 'react';
+
+import { Home } from '@pages';
 
 const App: FC = () => {
   return <Home />;

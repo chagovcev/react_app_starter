@@ -1,9 +1,10 @@
-import { useAppDispatch, useAppSelector } from '../../store/hooks';
-
-import { currentThemeSelector, toggleTheme } from '../../features/themes';
 import { type FC } from 'react';
 
-import { Button } from '../../components';
+import { Button } from '@components';
+
+import { useAppDispatch, useAppSelector } from '@store/hooks';
+
+import { currentThemeSelector, toggleTheme } from '@features/themes';
 
 import styles from './Home.module.scss';
 

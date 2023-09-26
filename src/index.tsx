@@ -1,17 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 
-import App from './App';
-import { store } from './store';
+import { store } from '@store/index';
 
-import { ThemeProvider } from './providers';
+import { ThemeProvider } from '@providers';
+
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.scss';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement,
-);
+const root = createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
   <React.StrictMode>

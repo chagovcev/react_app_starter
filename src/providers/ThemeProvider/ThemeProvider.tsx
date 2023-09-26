@@ -1,8 +1,10 @@
 import { type FC, type ReactElement, useEffect } from 'react';
 
-import { currentThemeSelector } from '../../features/themes';
-import { useAppSelector } from '../../store/hooks';
-import { LS_THEME } from '../../constants';
+import { useAppSelector } from '@store/hooks';
+
+import { LS_THEME } from '@constants/localStorage';
+
+import { currentThemeSelector } from '@features/themes';
 
 interface IThemeProvider {
   children: ReactElement;
