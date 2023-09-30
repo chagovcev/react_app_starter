@@ -2,12 +2,13 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 
-import { store } from '@store/index';
+import { store } from '@store';
 
-import { ThemeProvider } from '@providers';
+import { ThemeProvider } from '@providers/ThemeProvider';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
 import './index.scss';
 
 const root = createRoot(document.getElementById('root') as HTMLElement);

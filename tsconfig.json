@@ -3,10 +3,13 @@
     "baseUrl": "./src",
     "paths": {
       "@components": ["./components"],
+      "@components/*": ["./components/*"],
+      "@store": ["./store"],
       "@store/*": ["./store/*"],
       "@features/*": ["./features/*"],
-      "@providers": ["./providers"],
+      "@providers/*": ["./providers/*"],
       "@pages": ["./pages"],
+      "@pages/*": ["./pages/*"],
       "@constants/*": ["./constants/*"]
     },
     "target": "es5",

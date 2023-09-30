@@ -10,8 +10,12 @@ import styles from './Home.module.scss';
 
 const Home: FC = () => {
   const currentTheme = useAppSelector(currentThemeSelector);
-
   const dispatch = useAppDispatch();
+
+  // const todos = useGetTodosQuery();
+
+  // console.log('todos', todos);
+
   const handleChangeTheme = () => {
     dispatch(toggleTheme());
   };
