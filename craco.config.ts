@@ -9,6 +9,7 @@ module.exports = {
       '@providers': path.resolve(__dirname, 'src/providers'),
       '@pages': path.resolve(__dirname, 'src/pages'),
       '@constants': path.resolve(__dirname, 'src/constants'),
+      '@types': path.resolve(__dirname, 'src/types'),
     },
   },
 };

@@ -10,7 +10,8 @@
       "@providers/*": ["./providers/*"],
       "@pages": ["./pages"],
       "@pages/*": ["./pages/*"],
-      "@constants/*": ["./constants/*"]
+      "@constants/*": ["./constants/*"],
+      "@types": ["./types"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
