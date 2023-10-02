@@ -1,12 +1,12 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { createApi } from '@reduxjs/toolkit/query/react';
+
+import { baseQuery } from '@store/api';
 
 import { type Todo } from '@types';
 
 export const todosApi = createApi({
   reducerPath: 'todosApi',
-  baseQuery: fetchBaseQuery({
-    baseUrl: 'https://jsonplaceholder.typicode.com/',
-  }),
+  baseQuery,
   endpoints: (builder) => ({
     getTodos: builder.query<Todo, undefined>({
       query: () => 'todos',
