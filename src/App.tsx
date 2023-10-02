@@ -1,9 +1,21 @@
-import { type FC } from 'react';
+import { type FC, useMemo } from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import { Home } from '@pages';
 
 const App: FC = () => {
-  return <Home />;
+  const router = useMemo(
+    () =>
+      createBrowserRouter([
+        {
+          path: '/',
+          element: <Home />,
+        },
+      ]),
+    [],
+  );
+
+  return <RouterProvider router={router} />;
 };
 
 export default App;
