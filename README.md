@@ -14,11 +14,13 @@ This project starter has the following stack and features:
 10. Changing themes
 11. Changes languages
 
-To use this project use following commands:\
+To use this project use following commands:
 - ``git clone https://github.com/chagovcev/react_app_starter.git .``
 - ``npm install``
 
-Now project is installed.\
+Now project is installed.
+
+First of all, rename ``.env.development`` file to ``.env`` and add your rest api domain (by default you can use ``https://jsonplaceholder.typicode.com/``)
 
 You can run **StoryBook** with command:
 - ``npm run storybook``
@@ -28,6 +30,9 @@ If you have any problems with Prettier, just run the command:
 
 Project run with command:
 - ``npm run start``
+
+Project build with command:
+- ``npm run build``
 
 Component has this minimal structure:
 ```
