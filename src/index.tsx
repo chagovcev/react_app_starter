@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 
 import { store } from '@store';
 
-import { ThemeProvider } from '@providers/ThemeProvider';
+import { ThemeProvider, LocalizationProvider } from '@providers';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -17,7 +17,9 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <ThemeProvider>
-        <App />
+        <LocalizationProvider>
+          <App />
+        </LocalizationProvider>
       </ThemeProvider>
     </Provider>
   </React.StrictMode>,

@@ -9,6 +9,7 @@ import { currentThemeSelector } from '@features/themes';
 interface IThemeProvider {
   children: ReactElement;
 }
+
 const ThemeProvider: FC<IThemeProvider> = ({ children }) => {
   const theme = useAppSelector(currentThemeSelector);
 

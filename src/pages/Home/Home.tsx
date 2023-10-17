@@ -1,4 +1,5 @@
 import { type FC } from 'react';
+import { FormattedMessage, FormattedNumber } from 'react-intl';
 
 import { Button } from '@components';
 
@@ -26,10 +27,16 @@ const Home: FC = () => {
 
   return (
     <div className={styles.home_page}>
-      <h1 className={styles.home_page__title}> This is a Home page</h1>
+      <h1 className={styles.home_page__title}>
+        <FormattedMessage id="title" />
+      </h1>
 
       <p className={styles.home_page__paragraph}>
         Now is <b>{currentTheme}</b> theme.
+      </p>
+
+      <p>
+        <FormattedNumber value={19} style="currency" currency="EUR" />
       </p>
 
       <Button type="button" onClick={handleChangeTheme} label="Change theme" />
