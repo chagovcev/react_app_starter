@@ -7,19 +7,19 @@ type themeType = (typeof themes)[number];
 const isThemeType = (theme: string): theme is themeType =>
   themes.includes(theme as themeType);
 
+const themeInStorage = localStorage.getItem('theme');
+
 interface IInitialState {
   theme: themeType;
 }
-
-const themeInStorage = localStorage.getItem('theme');
 
 const initialState: IInitialState = {
   theme:
     !!themeInStorage && isThemeType(themeInStorage) ? themeInStorage : 'light',
 };
 
-export const themesSlice = createSlice({
-  name: 'themes',
+export const settingsSlice = createSlice({
+  name: 'settings',
   initialState,
   reducers: {
     toggleTheme: (state) => {
@@ -28,6 +28,6 @@ export const themesSlice = createSlice({
   },
 });
 
-export const { toggleTheme } = themesSlice.actions;
+export const { toggleTheme } = settingsSlice.actions;
 
-export default themesSlice.reducer;
+export default settingsSlice.reducer;

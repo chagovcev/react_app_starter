@@ -6,7 +6,7 @@ import { Button } from '@components';
 import { useAppDispatch, useAppSelector } from '@store/hooks';
 import { useGetTodosQuery } from '@store/api';
 
-import { currentThemeSelector, toggleTheme } from '@features/themes';
+import { currentThemeSelector, toggleTheme } from '@features/settings';
 
 import styles from './Home.module.scss';
 

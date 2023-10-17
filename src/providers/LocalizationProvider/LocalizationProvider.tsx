@@ -21,9 +21,6 @@ interface ILocalizationProvider {
 const LocalizationProvider: FC<ILocalizationProvider> = ({ children }) => {
   const locale = LOCALES.RUSSIAN;
 
-  const messages = intlMessages[locale];
-  console.log('messages', messages);
-
   return (
     <IntlProvider
       messages={intlMessages[locale]}

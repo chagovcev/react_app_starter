@@ -2,11 +2,11 @@ import { configureStore } from '@reduxjs/toolkit';
 
 import { todosApi } from '@store/api';
 
-import { themesReducer } from '@features/themes';
+import { settingsReducer } from '@features/settings';
 
 export const store = configureStore({
   reducer: {
-    theme: themesReducer,
+    settings: settingsReducer,
     [todosApi.reducerPath]: todosApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>

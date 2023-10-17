@@ -4,7 +4,7 @@ import { useAppSelector } from '@store/hooks';
 
 import { LS_THEME } from '@constants/localStorage';
 
-import { currentThemeSelector } from '@features/themes';
+import { currentThemeSelector } from '@features/settings';
 
 interface IThemeProvider {
   children: ReactElement;
