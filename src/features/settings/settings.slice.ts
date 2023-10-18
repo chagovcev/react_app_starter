@@ -48,7 +48,6 @@ export const settingsSlice = createSlice({
     },
     setLocal: (state, action: PayloadAction<string>) => {
       if (isLocaleType(action.payload)) {
-        console.log(typeof action.payload);
         state.locale = action.payload;
       }
     },

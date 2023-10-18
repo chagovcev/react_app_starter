@@ -44,3 +44,5 @@ components
 |    └---index.ts
 ```
 There is a store in ``src/store/index.ts``. You can add reducers and api slices here.
+
+If you want to use i18n functionality you can move to the 'with-i18n' [branch](https://github.com/chagovcev/react_app_starter/tree/with-i18n).
