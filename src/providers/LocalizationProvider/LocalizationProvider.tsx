@@ -1,17 +1,16 @@
 import { type FC, type ReactElement } from 'react';
 import { IntlProvider } from 'react-intl';
 
+import { useAppSelector } from '@store/hooks';
+
+import { currentLocaleSelector, Locale } from '@features/settings';
+
 import messagesEn from '../../lang/en.json';
 import messagesRu from '../../lang/ru.json';
 
-export const LOCALES = {
-  ENGLISH: 'en',
-  RUSSIAN: 'ru',
-};
-
 const intlMessages = {
-  [LOCALES.ENGLISH]: messagesEn,
-  [LOCALES.RUSSIAN]: messagesRu,
+  [Locale.English]: messagesEn,
+  [Locale.Russian]: messagesRu,
 };
 
 interface ILocalizationProvider {
@@ -19,13 +18,13 @@ interface ILocalizationProvider {
 }
 
 const LocalizationProvider: FC<ILocalizationProvider> = ({ children }) => {
-  const locale = LOCALES.RUSSIAN;
+  const locale = useAppSelector(currentLocaleSelector);
 
   return (
     <IntlProvider
       messages={intlMessages[locale]}
       locale={locale}
-      defaultLocale={LOCALES.ENGLISH}
+      defaultLocale={Locale.English}
     >
       {children}
     </IntlProvider>
